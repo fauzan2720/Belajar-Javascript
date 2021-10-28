@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+
+    <script>
+        function MouseOver() {
+            document.images["img"].src = "assets/img1.jpg";
+        }
+
+        function MouseOut() {
+            document.images["img"].src = "assets/img2.jpg";
+        }
+
+        function Load() {
+            document.images["img"].src = "assets/img2.jpg";
+        }
+    </script>
+</head>
+
+<body onload="Load()">
+    <img name="img" onmouseover="MouseOver()" onmouseout="MouseOut()" width="1000">
+</body>
+
+</html>

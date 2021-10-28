@@ -1,0 +1,25 @@
+<script>
+    var array = [5, 3, 4, 1, 8, 6, 2, 9, 7]; // membuat nilai array
+    var length = array.length; // membuat panjang data
+    var i, j, temp; // membuat variabel
+
+    document.writeln('Sebelum di sorting: ');
+    for (let i = 0; i < length; i++) { // memanggil data array berdasarkan index, dimulai index ke-0
+        document.writeln(array[i]);
+    }
+
+    for (let i = 0; i < length; i++) {
+        for (let j = 0; j < length - 1; j++) { // setiap data diurutkan
+            if (array[j] > array[j + 1]) { // jika index > dari index setelahnya, maka
+                temp = array[j]; // nilai temp = nilai pada index
+                array[j] = array[j + 1]; // pindah posisi (swap) nilai index dengan nilai index setelahnya
+                array[j + 1] = temp; // nilai index setelahnya = nilai temp
+            }
+        }
+    }
+
+    document.writeln('<br> Sesudah di sorting: ');
+    for (let i = 0; i < array.length; i++) { // memanggil data setelah disorting
+        document.writeln(array[i]);
+    }
+</script>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies</title>
+
+    <script>
+        function writeCookies() {
+            if (document.myform.customer.value == "") {
+                alert("Masukkan beberapa nilai");
+                return;
+            }
+            var cookieValue = escape(document.myform.customer.value) + ";";
+            document.cookie = "name=" + cookieValue;
+            document.writeln("Setting cookies : " + "name = " + cookieValue);
+        }
+    </script>
+</head>
+
+<body>
+    <form action="" name="myform">
+        <label for="Nama">Masukkan nama: </label>
+        <input type="text" name="customer" autofocus>
+
+        <input type="button" value="Set cookies" onclick="writeCookies()">
+    </form>
+</body>
+
+</html>

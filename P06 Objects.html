@@ -1,0 +1,19 @@
+<script>
+    var belajar = {
+        "nama": "Fauzan Abdillah",
+        "bahasa": "Javascript",
+        "melalui": "Github"
+    };
+
+    document.writeln("Nama: " + belajar.nama + "<br>");
+    document.writeln("Bahasa: " + belajar.bahasa + "<br>");
+    document.writeln("Melalui: " + belajar.melalui + "<br>");
+
+    // menggunakan perulangan for
+    var txt = "";
+    var i;
+    for (i in belajar) { // memanggil data-data nya berdasarkan index ke-i, hanya isi nya
+        txt += belajar[i] + ", ";
+    }
+    document.writeln(txt);
+</script>

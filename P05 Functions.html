@@ -1,0 +1,25 @@
+<script>
+    // kelebihan menggunakan function adalah bisa dicetak berulang kali tanpa mengulangi baris perintah, cukup memanggil nama method saja
+
+    // tidak dengan parameter
+    function biodata() {
+        var nama = "Fauzan Abdillah";
+        let umur = 20;
+
+        // cetak
+        document.writeln("Nama: " + nama + "<br>");
+        document.writeln("Umur: " + umur + " tahun <br><br>");
+    }
+
+    // menggunakan parameter
+    function input_biodata(nama, umur) {
+        document.writeln("Nama: " + nama + "<br>");
+        document.writeln("Umur: " + umur + " tahun <br><br>");
+    }
+
+    // cetak data
+    biodata();
+    biodata();
+    input_biodata("Akbar", 12);
+    input_biodata("Firman", 23)
+</script>

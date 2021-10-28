@@ -1,0 +1,31 @@
+<script>
+    // 1. perulangan for
+    for (let i = 0; i <= 2; i++) {
+        for (let j = 0; j <= 2; j++) {
+            document.writeln(i + j + " ");
+        }
+    }
+    document.writeln("<br>");
+
+    // 2. perulangan while
+    let a = 1;
+    while (a <= 3) {
+        document.writeln(a + " ");
+        a++;
+    }
+    document.writeln("<br>");
+
+    // 3. perulangan do while
+    let b = 0;
+    do {
+        document.writeln(b + " ");
+        b++;
+    } while (b <= 10);
+    document.writeln("<br>");
+
+    // 4. perulangan foreach
+    var nama = ["Fauzan", "Firman", "Abdillah", "Akbar"];
+    nama.forEach((i) => {
+        document.writeln(i);
+    });
+</script>

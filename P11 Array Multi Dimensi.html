@@ -1,0 +1,51 @@
+<script>
+    let mat_a = [
+        [1, 1, 1],
+        [2, 2, 2],
+        [3, 3, 3]
+    ];
+    let mat_b = [
+        [3, 3, 3],
+        [2, 2, 2],
+        [1, 1, 1]
+    ];
+
+    // membuat panjang array
+    let baris_a = mat_a.length;
+    let kolom_a = mat_a[0].length;
+    let baris_b = mat_b.length;
+    let kolom_b = mat_b[0].length;
+
+    // memanggil matriks A
+    document.writeln("Diketahui matriks A = <br>");
+    for (let i = 0; i < baris_a; i++) {
+        document.writeln("[ ");
+        for (let j = 0; j < kolom_a; j++) {
+            document.writeln(mat_a[i][j] + " "); // berdasarkan index ke-ixj
+        }
+        document.writeln("] <br>");
+    }
+    document.writeln("<br>");
+
+    // memanggil matriks B
+    document.writeln("Diketahui matriks B = <br>");
+    for (let i = 0; i < baris_b; i++) {
+        document.writeln("[ ");
+        for (let j = 0; j < kolom_b; j++) {
+            document.writeln(mat_b[i][j] + " ");
+        }
+        document.writeln("] <br>");
+    }
+    document.writeln("<br>");
+
+    // proses penjumlahan
+    document.writeln("Hasil Penjumlahan = <br>");
+    for (let i = 0; i < baris_a; i++) {
+        document.writeln("[ ");
+        for (let j = 0; j < kolom_a; j++) {
+            jumlah_mat = mat_a[i][j] + mat_b[i][j];
+            document.writeln(jumlah_mat + " ");
+        }
+        document.writeln(" ] <br>");
+    }
+</script>
